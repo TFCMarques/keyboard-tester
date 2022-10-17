@@ -168,7 +168,7 @@ export default function Home() {
               <div className={`${useKeyPress("KeyQ")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
                 <p className="font-semibold text-center">Q</p>
               </div>
-              <div className={`${useKeyPress("KeyWKey")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
+              <div className={`${useKeyPress("KeyW")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
                 <p className="font-semibold text-center">W</p>
               </div>
               <div className={`${useKeyPress("KeyE")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
