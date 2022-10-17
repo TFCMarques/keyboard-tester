@@ -32,8 +32,8 @@ export default async function ogImage () {
       </div>
     ),
     {
-      width: 800,
-      height: 500,
+      width: 1200,
+      height: 630,
     },
   );
 }
