@@ -55,7 +55,20 @@ export default function Home() {
         <meta name="author" content="Tiago Marques" />
         <meta name="description" content="Keyboard Tester for standard QWERTY (US Layout)" />
         <meta name="keywords" content="keyboard, tester, testing, keys" />
-        <meta property="og:image" content="https://keyboard-tester-tfcmarques.vercel.app//api/og" />
+        
+        <meta property="og:url" content="https://keyboard-tester-tfcmarques.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Keyboard Tester" />
+        <meta property="og:description" content="Keyboard Tester for standard QWERTY (US Layout)" />
+        <meta property="og:image" content="https://keyboard-tester-tfcmarques.vercel.app/api/og" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content="keyboard-tester-tfcmarques.vercel.app" />
+        <meta property="twitter:url" content="https://keyboard-tester-tfcmarques.vercel.app/" />
+        <meta name="twitter:title" content="Keyboard Tester" />
+        <meta name="twitter:description" content="Keyboard Tester for standard QWERTY (US Layout)" />
+        <meta name="twitter:image" content="https://keyboard-tester-tfcmarques.vercel.app/api/og" />
+
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
