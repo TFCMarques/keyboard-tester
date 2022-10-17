@@ -55,6 +55,7 @@ export default function Home() {
         <meta name="author" content="Tiago Marques" />
         <meta name="description" content="Keyboard Tester for standard QWERTY (US Layout)" />
         <meta name="keywords" content="keyboard, tester, testing, keys" />
+        <meta property="og:image" content="https://keyboard-tester-tfcmarques.vercel.app//api/og" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
