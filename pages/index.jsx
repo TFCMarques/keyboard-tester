@@ -55,7 +55,7 @@ export default function Home() {
         <meta name="author" content="Tiago Marques" />
         <meta name="description" content="Keyboard Tester for standard QWERTY (US Layout)" />
         <meta name="keywords" content="keyboard, tester, testing, keys" />
-        
+          
         <meta property="og:url" content="https://keyboard-tester-tfcmarques.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Keyboard Tester" />
