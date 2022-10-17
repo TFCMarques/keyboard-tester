@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { AiFillGithub } from 'react-icons/ai';
 import { BsShift, BsCapslock, BsArrowReturnLeft, BsBackspace, BsArrowLeftRight, BsJustify, BsWindows } from 'react-icons/bs';
 
@@ -17,22 +17,21 @@ export default function Home() {
       setPlaying(true);
     }
 
-    const downHandler = (event) => {
+    const downHandler = useCallback((event) => {
       event.preventDefault();
       if (event.key === targetKey || event.code === targetKey) {
-        console.log(event.code)
         setKeyPressed(true);
         if (!playing) playAudio();
       }
-    }
+    }, [setKeyPressed, playing, targetKey]);
 
-    const upHandler = (event) => {
+    const upHandler = useCallback((event) => {
       event.preventDefault();
       if (event.key === targetKey || event.code === targetKey) {
         setKeyPressed(false);
         setPlaying(false);
       }
-    };
+    }, [setKeyPressed, setPlaying, targetKey]);
 
     useEffect(() => {
       document.addEventListener("keydown", downHandler);
