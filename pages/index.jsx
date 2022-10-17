@@ -42,7 +42,7 @@ export default function Home() {
         document.removeEventListener("keydown", downHandler);
         document.removeEventListener("keyup", upHandler);
       };
-    }, [keyPressed]);
+    }, [keyPressed, downHandler, upHandler]);
 
     return keyPressed ? "bg-emerald-400" : "bg-slate-200";
   }
@@ -100,8 +100,8 @@ export default function Home() {
             </div>
           </div>
           <div className="h-16 flex flex-row justify-between mb-1">
-            <div className={`${useKeyPress("`")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
-              <p className="font-semibold text-center">`</p>
+            <div className={`${useKeyPress("\`")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
+              <p className="font-semibold text-center">{"`"}</p>
             </div>
             <div className={`${useKeyPress("1")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
               <p className="font-semibold text-center">1</p>
@@ -186,7 +186,7 @@ export default function Home() {
               <p className="font-semibold text-center">]</p>
             </div>
             <div className={`${useKeyPress("\\")} flex flex-col justify-center w-[96px] h-16 rounded-md shadow-sm shadow-slate-900`}>
-              <p className="font-semibold text-center">\</p>
+              <p className="font-semibold text-center">{"\\"}</p>
             </div>
           </div>
           <div className="h-16 flex flex-row justify-between mb-1">
@@ -222,10 +222,10 @@ export default function Home() {
               <p className="font-semibold text-center">L</p>
             </div>
             <div className={`${useKeyPress(";")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
-              <p className="font-semibold text-center">;</p>
+              <p className="font-semibold text-center">{";"}</p>
             </div>
-            <div className={`${useKeyPress("'")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
-              <p className="font-semibold text-center">'</p>
+            <div className={`${useKeyPress("\'")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
+              <p className="font-semibold text-center">{"'"}</p>
             </div>
             <div className={`${useKeyPress("Enter")} flex flex-row items-center justify-center w-[148px] h-16 rounded-md shadow-sm shadow-slate-900`}>
               <BsArrowReturnLeft className="text-md mr-2"/>
@@ -259,13 +259,13 @@ export default function Home() {
               <p className="font-semibold text-center">M</p>
             </div>
             <div className={`${useKeyPress(",")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
-              <p className="font-semibold text-center">,</p>
+              <p className="font-semibold text-center">{","}</p>
             </div>
             <div className={`${useKeyPress(".")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
-              <p className="font-semibold text-center">.</p>
+              <p className="font-semibold text-center">{"."}</p>
             </div>
             <div className={`${useKeyPress("/")} flex flex-col justify-center w-16 h-16 rounded-md shadow-sm shadow-slate-900`}>
-              <p className="font-semibold text-center">/</p>
+              <p className="font-semibold text-center">{"/"}</p>
             </div>
             <div className={`${useKeyPress("ShiftRight")} flex flex-row items-center justify-center w-[182px] h-16 rounded-md shadow-sm shadow-slate-900`}>
               <BsShift className="text-md mr-2"/>
